@@ -5,6 +5,291 @@
   <title>Каталог Academy: Техномарт</title>
 </head>
 <body>
-<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+
+<h1>Компания "Техномарт"</h1>
+<header>
+
+  <nav>
+    <a href="index.html"><img src="img/logo.PNG" width="150" height="53" alt="Логотип Техномарт"></a>
+    <form action="#" method="POST">
+      <input type="search" placeholder="Поиск:">
+    </form>
+    <a href="blank.html">Закладки</a>
+    <a href="blank.html">Корзина</a>
+    <a href="blank.html">Оформить заказ</a>
+    <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
+    <address>
+      +7(812) 555-05-55
+      г.Сантк-Петербург, ул. Б.Конюшенная, д. 19/8
+    </address>
+    <p>Равшан Джамшутович</p>
+    <button type="button">Выход</button>
+    <a href="blank.html">Мои заказы</a>
+    <a href="blank.html">Личный кабинет</a>
+    <ul>
+      <li><a>Главная</a></li>
+      <li><a href="blank.html">Компания</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="blank.html">Новости</a></li>
+      <li><a href="blank.html">Спецпредложения</a></li>
+      <li><a href="blank.html">Доставка</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+  <ul>
+    <li>
+      <a href="index.html">Главная</a>
+    </li>
+    <li>
+      <a href="catalog.html">Каталог</a>
+    </li>
+    <li>
+      <a href="#">Инструменты</a>
+    </li>
+    <li>
+      <a href="#">Перфораторы</a>
+    </li>
+  </ul>
+
+  <h2>ПЕРФОРАТОРЫ</h2>
+
+  <section>
+    <h3>Фильтр товаров</h3>
+    <form method="get" action="https://echo.htmlacademy.ru/">
+      <fieldset>
+        <legend>Цена</legend>
+        <input type="range" min="0" max="30000" step="10" value="50">
+      </fieldset>
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li>
+            <lable><input type="checkbox" name="maker" checked value="Boshe">Boshe</lable>
+          </li>
+          <li>
+            <lable><input type="checkbox" name="maker" value="Интерскол">Интерскол</lable>
+          </li>
+          <li>
+            <lable><input type="checkbox" name="maker" checked value="Makita">Makita</lable>
+          </li>
+          <li>
+            <lable><input type="checkbox" name="maker" value="Dewalt">Dewalt</lable>
+          </li>
+          <li>
+            <lable><input type="checkbox" name="maker" value="Hitachi">Hitachi</lable>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
+        <ul>
+          <li><input type="radio" name="radio-group" checked value="buttary">Аккумуляторные</li>
+          <li><input type="radio" name="radio-group" value="set">Сетевые</li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+  </section>
+  <section>
+    <h3>Сортировка:</h3>
+    <ul>
+      <li><input type="button" name="cost" value="По цене"></li>
+      <li><input type="button" name="cost" value="По типу"></li>
+      <li><input type="button" name="cost" value="По функционалу"></li>
+      <li><input type="button" name="cost" value="от А до Я"></li>
+      <li><input type="button" name="cost" value="от Я до А"></li>
+    </ul>
+    <h3>Спиоск отфильтрованных товаров</h3>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a>
+          <button type="submit">КУПИТЬ</button>
+          <button type="submit">В ЗАКЛАДКИ</button>
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/good.PNG" width="184" height="164" alt="good">
+          <table>
+            <tr>
+              <th>Перфоратор BOSCH BFG 9000</th>
+              <th><s>32500 Р.</s></th>
+              <th>25500 Р.</th>
+            </tr>
+          </table>
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a>1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <a href="#">Следующая</a>
+      </li>
+    </ul>
+  </section>
+  <article>
+    <h2>О продукции</h2>
+    <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
+    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+      бетоне и камне.<br>
+      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+      шуруповерта и отбойного молотка.<br>
+      В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+      дрель.</p>
+  </article>
+
+</main>
+
+
+<footer>
+  <section>
+    <address>
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+    </address>
+    <ul>
+      <li><a>Главная</a></li>
+      <li><a href="blank.html">Компания</a></li>
+      <li><a href="blank.html">Новости</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="blank.html">Доставка</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+
+    <ul>
+      <li><a>Главная</a></li>
+      <li><a href="blank.html">Материалы</a></li>
+      <li><a href="blank.html">Техника</a></li>
+      <li><a href="catalog.html">Инструмент</a></li>
+      <li><a href="blank.html">Спецпредложения</a></li>
+    </ul>
+  </section>
+  <section>
+    <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+    <ul>
+      <li><a href="#"><img src="img/vk.PNG" alt="vk"></a></li>
+      <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="img/inst.png" alt="instagram"></a></li>
+    </ul>
+
+    <dl>
+      <dt>Обратная связь: </dt>
+      <dd><a href="#">mail@htmlacademy.ru</a></dd>
+      <dt>Разработано —  </dt>
+      <dd><a href="#">htmlacademy.ru</a></dd>
+    </dl>
+  </section>
+
+</footer>
+
+<section>
+  <h3>Добавление товара в корзину</h3>
+  <button type="button">Закрыть</button>
+  <p>Товар добавлен в корзину!</p>
+  <button type="button">ОФОРМИТЬ ЗАКАЗ</button>
+  <button type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+</section>
 </body>
 </html>
