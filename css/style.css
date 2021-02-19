@@ -28,13 +28,25 @@ img {
 }
 
 
-/*hearder*/
+/*header*/
 
 .nav-site {
   list-style: none;
 }
 
+.header-main {
+  background-color: var(--basic-very-light-purple);
+}
+
 /*main*/
+
+.page-body {
+  background-color: var(--basic-very-dark-white);
+}
+
+.services {
+  background-color: var(--basic-very-light-purple);
+}
 
 .offers-list {
   list-style:none;
@@ -52,6 +64,10 @@ img {
   list-style: none;
 }
 /*footer*/
+
+.main-footer {
+  background-color: var(--basic-very-dark-gray);
+}
 
 .footer-nav .menu {
   list-style: none;
