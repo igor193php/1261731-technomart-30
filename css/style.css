@@ -15,3 +15,40 @@
   --basic-light-gray: #A9A9A9;
   --basic-light-orange: #FFD180;
 }
+
+/*hearder*/
+
+.nav-site {
+  list-style: none;
+}
+
+/*main*/
+
+.offers-list {
+  list-style:none;
+}
+
+.popular-goods-list {
+  list-style: none;
+}
+
+.popular-brands-list {
+  list-style: none;
+}
+
+.services-list {
+  list-style: none;
+}
+/*footer*/
+
+.footer-nav menu {
+  list-style: none;
+}
+
+.footer-nav category-goods {
+  list-style: none;
+}
+
+.social-list {
+  list-style: none;
+}
