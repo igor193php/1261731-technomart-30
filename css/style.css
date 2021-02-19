@@ -16,6 +16,18 @@
   --basic-light-orange: #FFD180;
 }
 
+/*global*/
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*hearder*/
 
 .nav-site {
@@ -41,11 +53,11 @@
 }
 /*footer*/
 
-.footer-nav menu {
+.footer-nav .menu {
   list-style: none;
 }
 
-.footer-nav category-goods {
+.footer-nav .category-goods {
   list-style: none;
 }
 
