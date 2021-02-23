@@ -14,42 +14,244 @@
   --basic-vey-dark-black: #000000;
   --basic-light-gray: #A9A9A9;
   --basic-light-orange: #FFD180;
+  --color-placeholder: #A9A9A9;
+  --color-address-footer: #F3F7F9;
+  --very-light-purple: #F4F4F4;
+  --dark-yellow: #5FBB2D;
+  --dark-jungle-green: #161d29;
+  --generic-brown: #BA2732;
+  --light-gray: #c5c5c5;
+  --very-dark-pink: #1D2739;
+  --generic-red: #ca2c37;
 }
+
 
 /*global*/
 
-a {
+.page-body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-very-dark-white);
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--basic-very-dark-white);
+  line-height: 24px;
+}
+
+.page-body a {
   text-decoration: none;
 }
 
-img {
+.page-body p {
+  color: var(--basic-vey-dark-black);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+}
+
+.page-body h2 {
+  color: var(--basic-very-dark-gray);
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.page-body h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  font-color: var(--basic-very-dark-white);
+}
+
+.page-body img {
   max-width: 100%;
   height: auto;
 }
 
+/*button*/
+
+.button {
+  line-height: 18px;
+  color: var(--basic-very-dark-white);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-make-oder {
+  line-height: 18px;
+  color: var(--basic-very-dark-white);
+  text-align: center;
+  background-color: var(--basic-green);
+}
+
+.button-make-oder:hover {
+  background-color: var(--dark-yellow);
+}
+
+.button-make-oder:active {
+  color: rgba(100%, 100%, 100%, 0.5);
+}
+
+.header-top .bookmarks:active,
+.header-top .basket:active {
+  color: rgba(100%, 100%, 100%, 0.5);
+  background-color: var(--dark-jungle-green);
+}
+
+.sing-up:hover,
+.check-in:hover {
+  color: var(--basic-red);
+}
+
+.sing-up:active,
+.check-in:active {
+  color: var(--light-gray);
+}
+
+.button-get-info {
+  line-height: 18px;
+  background-color: var(--basic-deep-carmine-pink);
+  color: var(--basic-very-dark-white);
+}
+
+.button-get-info:hover {
+  background-color: var(--generic-red);
+}
+
+.button-get-info:active {
+  background-color: var(--generic-brown);
+}
+
+.button-goods-item {
+  background-color: var(--basic-deep-carmine-pink);
+}
 
 /*header*/
-
-.nav-site {
-  list-style: none;
-}
 
 .header-main {
   background-color: var(--basic-very-light-purple);
 }
 
+.header-top {
+  font-size: 18px;
+  background-color: var(--basic-dark-blue);
+  line-height: 24px;
+}
+
+.header-top a {
+  color: var(--basic-very-dark-white);
+}
+
+.about-shop-text {
+  color: var(--basic-deep-carmine-pink);
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.nav-site .item:hover a {
+  background-color: var(--basic-dark-blue);
+}
+
+.nav-site .item:active a {
+  background-color: var(--very-dark-pink);
+  color: rgba(100%, 100%, 100%, 0.5);
+}
+
+.contacts-phone {
+  color: var(--basic-deep-carmine-pink);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.sing-up,
+.check-in {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-vey-dark-black);
+}
+
+.header-navigation {
+  background-color: var(--basic-very-dark-gray);
+}
+
+.nav-site {
+  list-style: none;
+}
+
+.nav-site a {
+  color: var(--basic-very-dark-white);
+  font-size: 18px;
+}
+
+.contacts p {
+  font-family: Cuprum, "Arial", sans-serif;
+  font-size: 14px;
+}
+
 /*main*/
 
-.page-body {
-  background-color: var(--basic-very-dark-white);
+.offers-item {
+  background-color: var(--color-placeholder);
+}
+
+.offers-item .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offers-item a:hover {
+  background-color: rgba(77%, 77%, 77%, 0.3);
+}
+
+.offers-item a:active {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+.popular-goods-item del {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--color-placeholder);
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .services {
   background-color: var(--basic-very-light-purple);
 }
 
+.partner-list .item {
+  color: var(--basic-vey-dark-black);
+  font-size: 18px;
+}
+
 .offers-list {
   list-style:none;
+}
+
+.carousel {
+  background-color: var(--color-placeholder);
+}
+
+.carousel p {
+  color: var(--basic-very-dark-white);
+  font-size: 18px;
+}
+
+.carousel-img {
+  background-color: var(--color-placeholder);
+}
+
+.popular-goods .header,
+.popular-brands {
+  background-color: var(--basic-very-light-orange);
+}
+
+.popular-goods-item a {
+  color: var(--basic-vey-dark-black);
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .popular-goods-list {
@@ -63,6 +265,21 @@ img {
 .services-list {
   list-style: none;
 }
+
+.services-item button {
+  color: var(--basic-very-dark-white);
+  background-color: var(--basic-very-dark-gray);
+}
+
+.services-item button:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.services-item button:focus {
+  color: var(--basic-very-dark-gray);
+  background-color: var(--basic-very-dark-white);
+}
+
 /*footer*/
 
 .main-footer {
@@ -73,10 +290,73 @@ img {
   list-style: none;
 }
 
+.footer-nav .menu-item a {
+  font-size: 18px;
+  color: var(--basic-very-light-purple);
+}
+
+.footer-nav .menu-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav .menu-item a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-nav .category-goods-item a {
+  font-size: 18px;
+  color: var(--basic-light-orange);
+}
+
+.footer-nav .category-goods-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav .category-goods-item a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
 .footer-nav .category-goods {
   list-style: none;
 }
 
+.bottom-footer {
+  background-color: var(--basic-dark-blue);
+}
+
+.footer-nav .address,
+.footer-nav .phone {
+  font-size: 18px;
+  color: var(--color-address-footer);
+  font-family: Cuprum, "Arial", sans-serif;
+}
+
+.bottom-footer .info {
+  font-family: Cuprum, "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 16px;
+  color: var(--basic-very-dark-white);
+}
+
+.bottom-footer .info a {
+  color: var(--basic-light-orange);
+}
+
+.bottom-footer .info a:hover {
+   text-decoration: underline;
+ }
+
+.bottom-footer .info a:active {
+  text-decoration: none;
+  color: var(--generic-brown);
+}
+
 .social-list {
   list-style: none;
+}
+
+.footer-modal-message {
+  background-color:var(--very-light-purple);
 }
