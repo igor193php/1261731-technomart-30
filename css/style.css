@@ -92,8 +92,8 @@
   color: rgba(100%, 100%, 100%, 0.5);
 }
 
-.header-top .bookmarks:active,
-.header-top .basket:active {
+.bookmarks:active,
+.basket:active {
   color: rgba(100%, 100%, 100%, 0.5);
   background-color: var(--dark-jungle-green);
 }
@@ -148,11 +148,11 @@
   line-height: 23px;
 }
 
-.nav-site .item:hover a {
+.nav-site-item:hover a {
   background-color: var(--basic-dark-blue);
 }
 
-.nav-site .item:active a {
+.nav-site-item:active a {
   background-color: var(--very-dark-pink);
   color: rgba(100%, 100%, 100%, 0.5);
 }
@@ -185,7 +185,7 @@
 }
 
 .contacts p {
-  font-family: Cuprum, "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
 }
 
@@ -195,7 +195,7 @@
   background-color: var(--color-placeholder);
 }
 
-.offers-item .title {
+.offers-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -220,7 +220,7 @@
   background-color: var(--basic-very-light-purple);
 }
 
-.partner-list .item {
+.partner-list-item {
   color: var(--basic-vey-dark-black);
   font-size: 18px;
 }
@@ -242,7 +242,7 @@
   background-color: var(--color-placeholder);
 }
 
-.popular-goods .header,
+.popular-goods-header,
 .popular-brands {
   background-color: var(--basic-very-light-orange);
 }
@@ -286,39 +286,39 @@
   background-color: var(--basic-very-dark-gray);
 }
 
-.footer-nav .menu {
+.footer-nav-menu {
   list-style: none;
 }
 
-.footer-nav .menu-item a {
+.footer-nav-menu-item a {
   font-size: 18px;
   color: var(--basic-very-light-purple);
 }
 
-.footer-nav .menu-item a:hover {
+.footer-nav-menu-item a:hover {
   text-decoration: underline;
 }
 
-.footer-nav .menu-item a:active {
+.footer-nav-menu-item a:active {
   color: rgba(241, 245, 247, 0.5);
   text-decoration: none;
 }
 
-.footer-nav .category-goods-item a {
+.footer-nav-category-goods-item a {
   font-size: 18px;
   color: var(--basic-light-orange);
 }
 
-.footer-nav .category-goods-item a:hover {
+.footer-nav-category-goods-item a:hover {
   text-decoration: underline;
 }
 
-.footer-nav .category-goods-item a:active {
+.footer-nav-category-goods-item a:active {
   color: rgba(255, 209, 128, 0.5);
   text-decoration: none;
 }
 
-.footer-nav .category-goods {
+.footer-nav-category-goods {
   list-style: none;
 }
 
@@ -326,29 +326,29 @@
   background-color: var(--basic-dark-blue);
 }
 
-.footer-nav .address,
-.footer-nav .phone {
+.footer-nav-address,
+.footer-nav-phone {
   font-size: 18px;
   color: var(--color-address-footer);
-  font-family: Cuprum, "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.bottom-footer .info {
-  font-family: Cuprum, "Arial", sans-serif;
+.bottom-info {
+  font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   font-size: 16px;
   color: var(--basic-very-dark-white);
 }
 
-.bottom-footer .info a {
+.bottom-info a {
   color: var(--basic-light-orange);
 }
 
-.bottom-footer .info a:hover {
+.bottom-info a:hover {
    text-decoration: underline;
  }
 
-.bottom-footer .info a:active {
+.bottom-info a:active {
   text-decoration: none;
   color: var(--generic-brown);
 }
