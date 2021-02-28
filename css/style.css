@@ -31,7 +31,6 @@
   --red-600: #EE3643;
 }
 
-
 /*global*/
 
 .page-body {
@@ -284,32 +283,32 @@
   color: var(--white-600);
 }
 
-.footer-nav-menu-item a {
+.footer-menu-item a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white-800);
 }
 
-.footer-nav-menu-item a:hover {
+.footer-menu-item a:hover {
   text-decoration: underline;
 }
 
-.footer-nav-menu-item a:active {
+.footer-menu-item a:active {
   color: var(--gray-850-rgba-05);
   text-decoration: none;
 }
 
-.footer-nav-category-goods-item a {
+.footer-category-item a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-light-orange);
 }
 
-.footer-nav-category-goods-item a:hover {
+.footer-category-item a:hover {
   text-decoration: underline;
 }
 
-.footer-nav-category-goods-item a:active {
+.footer-category-item a:active {
   color: var(--brown-600-rgba-05);
   text-decoration: none;
 }
@@ -337,12 +336,9 @@
   color: var(--red-900);
 }
 
-
-
 .footer-modal-message {
-  background-color:var(--white-500);
+  background-color: var(--white-500);
 }
-
 
 /*button*/
 
@@ -369,17 +365,3 @@
 .button-goods-item {
   background-color: var(--red-600);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
