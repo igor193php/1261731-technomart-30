@@ -14,6 +14,7 @@
   --black-700: #1D2739;
   --black-600: #293449;
   --black-500: #32425C;
+  --black-900-rgba-03: rgba(0, 0, 0, 0.3);
   --basic-golden-tainoi: #FFBF47;
   --basic-light-orange: #FFD180;
   --gray-900: #A9A9A9;
@@ -22,6 +23,7 @@
   --gray-700-rgba-03: rgba(169, 169, 169, 0.3);
   --gray-800: #A9A9A9;
   --gray-700: #C5C5C5;
+  --gray-600: #F7F3EC;
   --green-900: #63A63E;
   --green-800: #5FBB2D;
   --green-700: #8ED78F;
@@ -141,6 +143,13 @@
 .nav-site-item a:active {
   background-color: var(--black-700);
   color: var(--white-900-rgba-05);
+}
+
+/*catalog*/
+.cabinet-section a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black-500);
 }
 
 /*main*/
@@ -269,6 +278,56 @@
   line-height: 24px;
 }
 
+/*catalog*/
+
+.breadcrumbs a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--black-900);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog-title {
+  background-color: var(--white-800);
+}
+
+.filters-list a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--black-900-rgba-03);
+  font-size: 13px;
+  line-height: 18px;
+  border-bottom: var(--red-700);
+  background-color: var(--gray-600);
+}
+
+.filters-list a:hover {
+  color: var(--black-900);
+  text-decoration: underline;
+}
+
+.filters-list a:active {
+  color: var(--red-700);
+  text-decoration: none;
+}
+
+.pagination-list a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--black-900);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.info-descriptions-goods {
+  background-color: var(--white-800);
+}
+
+.info-descriptions-goods p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--black-900);
+  font-size: 13px;
+  line-height: 24px;
+}
+
 /*footer*/
 
 .main-footer {
@@ -340,6 +399,18 @@
   background-color: var(--white-500);
 }
 
+/*catalog*/
+
+.modal-message-add-good {
+  background-color: var(--white-900);
+}
+
+.modal-message-add-good p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 /*button*/
 
 .button {
@@ -363,5 +434,9 @@
 }
 
 .button-goods-item {
+  background-color: var(--red-600);
+}
+
+.modal-button {
   background-color: var(--red-600);
 }
