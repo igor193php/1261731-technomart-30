@@ -16,15 +16,16 @@
   <title>HTML Academy: Техномарт</title>
 </head>
 <body class="page-body">
-<h1>Компания "Техномарт"</h1>
 <header class="header-main">
   <section class="header-top">
-    <a class="logo-main-header"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
+    <div class="header-top-content content-center">
+      <a class="logo-main-header"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
       <a class="bookmarks" href="blank.html">Закладки: 0</a>
       <a class="basket" href="blank.html">Корзина: 0</a>
-    <a class="make-oder" href="blank.html">Оформить заказ</a>
+      <a class="make-oder" href="blank.html">Оформить заказ</a>
+    </div>
   </section>
-  <section class="header-info">
+  <section class="header-info content-center">
     <p class="about-shop-text">Интернет-магазин
       строительных материалов и&nbsp;инструментов для ремонта</p>
     <address class="contacts">
@@ -36,7 +37,7 @@
       <a class="check-in" href="blank.html">Регистрация</a>
     </div>
   </section>
-  <nav class="header-navigation">
+  <nav class="header-navigation content-center">
     <ul class="nav-site clear-list">
       <li class="nav-site-item"><a>Главная</a></li>
       <li class="nav-site-item"><a href="blank.html">Компания</a></li>
@@ -49,9 +50,9 @@
   </nav>
 </header>
 
-<main class="container">
+<main class="container content-center">
   <section class="offers-day">
-    <ul class="offers-list">
+    <ul class="offers-list clear-list">
       <li class="offers-item">
         <h3 class="offers-item-title">Материалы</h3>
         <a class="button" href="blank.html">На любой вкус</a>
@@ -72,14 +73,16 @@
         <h3 class="offers-item-title">Доставка</h3>
         <a class="button" href="blank.html">Бесплатно</a>
       </li>
+      <li class="carousel-item">
+        <div class="carousel">
+          <h3>Перфораторы</h3>
+          <p class="carousel-info">Настоящие мужские игрушки</p>
+          <a class="button link-get-info" href="catalog.html">Открыть каталог</a>
+          <button class="carousel-button-back" type="button" disabled>Назад</button>
+          <button class="carousel-button-ahead" type="button">Вперед</button>
+        </div>
+      </li>
     </ul>
-    <div class="carousel">
-      <h3>Перфораторы</h3>
-      <p class="carousel-info">Настоящие мужские игрушки</p>
-      <a class="button link-get-info" href="catalog.html">Открыть каталог</a>
-      <button class="carousel-button-back" type="button" disabled>Назад</button>
-      <button class="carousel-button-ahead" type="button">Вперед</button>
-    </div>
   </section>
   <section class="goods">
     <div class="popular-goods-header">
@@ -217,54 +220,58 @@
 </main>
 
 <footer class="main-footer">
-  <a class="logo-main-footer"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
-  <section class="footer-nav">
-    <address class="footer-nav-contacts">
-      г.Сантк-Петербург, ул. Б.Конюшенная, д. 19/8
-      <a class="footer-nav-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    </address>
-    <ul class="footer-menu clear-list">
-      <li class="footer-menu-item"><a href="blank.html">Компания</a></li>
-      <li class="footer-menu-item"><a href="blank.html">Новости</a></li>
-      <li class="footer-menu-item"><a href="catalog.html">Каталог</a></li>
-      <li class="footer-menu-item"><a href="blank.html">Доставка</a></li>
-      <li class="footer-menu-item"><a href="blank.html">Контакты</a></li>
-    </ul>
+  <div class="footer-nav content-center">
+    <a class="logo-main-footer"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
+    <section class="footer-nav">
+      <address class="footer-nav-contacts">
+        г.Сантк-Петербург, ул. Б.Конюшенная, д. 19/8
+        <a class="footer-nav-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+      </address>
+      <ul class="footer-menu clear-list">
+        <li class="footer-menu-item"><a href="blank.html">Компания</a></li>
+        <li class="footer-menu-item"><a href="blank.html">Новости</a></li>
+        <li class="footer-menu-item"><a href="catalog.html">Каталог</a></li>
+        <li class="footer-menu-item"><a href="blank.html">Доставка</a></li>
+        <li class="footer-menu-item"><a href="blank.html">Контакты</a></li>
+      </ul>
 
-    <ul class="footer-category clear-list">
-      <li class="footer-category-item"><a href="blank.html">Материалы</a></li>
-      <li class="footer-category-item"><a href="blank.html">Техника</a></li>
-      <li class="footer-category-item"><a href="catalog.html">Инструмент</a></li>
-      <li class="footer-category-item"><a href="blank.html">Спецпредложения</a></li>
-    </ul>
-  </section>
+      <ul class="footer-category clear-list">
+        <li class="footer-category-item"><a href="blank.html">Материалы</a></li>
+        <li class="footer-category-item"><a href="blank.html">Техника</a></li>
+        <li class="footer-category-item"><a href="catalog.html">Инструмент</a></li>
+        <li class="footer-category-item"><a href="blank.html">Спецпредложения</a></li>
+      </ul>
+    </section>
+  </div>
   <section class="bottom-footer">
-    <p class="bottom-info">© 2010–2019 Компания «Техномарт»
-      Все права защищены</p>
-    <ul class="social-list clear-list">
-      <li class="social-list-item">
-        <a class="button-social" href="#">
-          <img src="img/vk.png" width="44" height="44" alt="Вконтакте">
-        </a>
-      </li>
-      <li class="social-list-item">
-        <a class="button-social" href="#">
-          <img src="img/fb.png" width="44" height="44" alt="facebook">
-        </a>
-      </li>
-      <li class="social-list-item">
-        <a class="button-social" href="#">
-          <img src="img/inst.png" width="44" height="44" alt="Инстаграмм">
-        </a>
-      </li>
-    </ul>
+    <div class="bottom-footer-content content-center">
+      <p class="bottom-info">© 2010–2019 Компания «Техномарт»
+        Все права защищены</p>
+      <ul class="social-list clear-list">
+        <li class="social-list-item">
+          <a class="button-social" href="#">
+            <img src="img/vk.png" width="44" height="44" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="button-social" href="#">
+            <img src="img/fb.png" width="44" height="44" alt="facebook">
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="button-social" href="#">
+            <img src="img/inst.png" width="44" height="44" alt="Инстаграмм">
+          </a>
+        </li>
+      </ul>
 
-    <p class="bottom-info">Обратная связь:
-      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </p>
-    <p class="bottom-info">Разработано-
-      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-    </p>
+      <p class="bottom-info">Обратная связь:
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="bottom-info">Разработано-
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </p>
+    </div>
   </section>
 </footer>
 

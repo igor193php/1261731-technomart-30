@@ -35,10 +35,20 @@
 
 /*global*/
 
+.page {
+  height: 100%;
+}
+
 .page-body {
   background-color: var(--white-900);
   font-family: "Cuprum", sans-serif;
   font-weight: 400;
+}
+
+.content-center {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .clear-list {
@@ -58,6 +68,10 @@
 
 .header-main {
   background-color: var(--white-800);
+
+  margin-bottom: 93px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .header-top {
@@ -163,10 +177,32 @@
 
 .offers-day {
   color: var(--white-900);
+  margin-bottom: 25px;
+  display: grid;
+  gap: 20px;
+
+
+  outline: 5px solid rgba(209, 40, 168, 0.7);
+  outline-offset: -5px;
+}
+
+.offers-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-item {
+  grid-column: 1 / 3;
+  grid-row: 5 / -1;
 }
 
 .offers-item {
   background-color: var(--gray-900);
+  width: 300px;
+  height: 123px;
 }
 
 .offers-item a {
@@ -216,6 +252,24 @@
   font-weight: 700;
 }
 
+.goods-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+
+  outline: 5px solid rgba(209, 149, 40, 0.7);
+  outline-offset: -5px;
+}
+
+.goods-item {
+  width:220px;
+  height:318px;
+  outline: 5px solid rgba(14, 165, 165, 0.7);
+  outline-offset: -5px;
+}
+
 .goods-link {
   color: var(--black-900);
   font-size: 18px;
@@ -237,6 +291,23 @@
 .popular-goods-header,
 .popular-brands {
   background-color: var(--white-700);
+}
+
+.popular-brands-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  outline: 5px solid rgba(35, 51, 51, 0.7);
+  outline-offset: -5px;
+}
+
+.popular-brands-item {
+  width: 220px;
+  height: 145px;
+  outline: 5px solid coral;
+  outline-offset: -5px;
 }
 
 .services {
@@ -341,6 +412,9 @@
 
 .main-footer {
   background-color: var(--black-500);
+
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-nav-contacts,
