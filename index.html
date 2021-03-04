@@ -20,9 +20,11 @@
   <section class="header-top">
     <div class="header-top-content content-center">
       <a class="logo-main-header"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
-      <a class="bookmarks" href="blank.html">Закладки: 0</a>
-      <a class="basket" href="blank.html">Корзина: 0</a>
-      <a class="make-oder" href="blank.html">Оформить заказ</a>
+      <div class="user-info">
+        <a class="bookmarks" href="blank.html">Закладки: 0</a>
+        <a class="basket" href="blank.html">Корзина: 0</a>
+        <a class="make-oder" href="blank.html">Оформить заказ</a>
+      </div>
     </div>
   </section>
   <section class="header-info content-center">
@@ -166,26 +168,27 @@
   </ul>
   </section>
   <section class="services">
-    <h2>Сервисы</h2>
-
-    <p class="services-info">Хороший интернет-магазин отличается от плохого не только ценами!
-      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-    <ul class="services-list clear-list">
-      <li class="services-item">
-        <button type="button">Доставка</button>
-      </li>
-      <li class="services-item">
-        <button type="button">Гарантия</button>
-      </li>
-      <li class="services-item">
-        <button type="button">Кредит</button>
-      </li>
-    </ul>
-    <h2>Доставка</h2>
-    <p class="services-info">Мы с удовольствием доставим ваш товар прямо
-      к вашему подъезду совершенно бесплатно!
-      Ведь мы неплохо заработаем,
-      поднимая его на ваш этаж!</p>
+    <div class="services-content">
+      <h2>Сервисы</h2>
+      <p class="services-info">Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <ul class="services-list clear-list">
+        <li class="services-item">
+          <button type="button">Доставка</button>
+        </li>
+        <li class="services-item">
+          <button type="button">Гарантия</button>
+        </li>
+        <li class="services-item">
+          <button type="button">Кредит</button>
+        </li>
+      </ul>
+      <h2>Доставка</h2>
+      <p class="services-info">Мы с удовольствием доставим ваш товар прямо
+        к вашему подъезду совершенно бесплатно!
+        Ведь мы неплохо заработаем,
+        поднимая его на ваш этаж!</p>
+    </div>
     <aside><img src="img/car.png" width="468" height="261" alt=""></aside>
   </section>
   <section class="description">
@@ -223,12 +226,12 @@
 
 <footer class="main-footer">
   <div class="footer-nav content-center">
-    <a class="logo-main-footer"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
-    <section class="footer-nav">
-      <address class="footer-nav-contacts">
-        г.Сантк-Петербург, ул. Б.Конюшенная, д. 19/8
-        <a class="footer-nav-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </address>
+    <address class="footer-nav-contacts">
+      <a class="logo-main-footer"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""></a>
+      г.Сантк-Петербург, ул. Б.Конюшенная, д. 19/8
+      <a class="footer-nav-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+    </address>
+    <section class="footer-nav-menu">
       <ul class="footer-menu clear-list">
         <li class="footer-menu-item"><a href="blank.html">Компания</a></li>
         <li class="footer-menu-item"><a href="blank.html">Новости</a></li>
