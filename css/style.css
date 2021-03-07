@@ -332,7 +332,6 @@
 }
 
 .popular-brands-list {
-  height: 419px;
   margin: 0 0 70px 0;
   padding: 0;
   display: grid;
@@ -349,7 +348,6 @@
 }
 
 .services {
-  height: 522px;
   background-color: var(--white-800);
   margin-bottom: 70px;
 }
@@ -526,7 +524,6 @@
 
 .footer-nav-contacts {
   width: 335px;
-  height: 193px;
 }
 
 .footer-nav-contacts,
@@ -544,8 +541,8 @@
   width: 560px;
 }
 
-.footer-menu li:first-child {
-  margin: 0;
+.footer-menu-item:first-child {
+  margin-left: 0;
 }
 
 .footer-menu-item {
@@ -573,12 +570,12 @@
   width: 539px;
 }
 
-.footer-category li:first-child {
-  margin: 0;
-}
-
 .footer-category-item {
   margin-left: 58px;
+}
+
+.footer-category-item:first-child {
+  margin-left: 0;
 }
 
 .footer-category-item a {
