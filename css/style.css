@@ -39,6 +39,16 @@
   height: 100%;
 }
 
+.logo-main-header {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  min-height: 42px;
+  background-color: var(--red-700);
+  box-shadow: 0 5px 0 0 var(--red-900);
+  position: relative;
+}
+
 .page-body {
   background-color: var(--white-900);
   font-family: "Cuprum", sans-serif;
@@ -81,18 +91,22 @@
   font-size: 18px;
   line-height: 24px;
   background-color: var(--black-600);
+  margin-bottom: 46px;
 }
 
 .user-info {
   width: 462px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: inherit;
 }
 
 .header-top-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 42px;
 }
 
 .header-top a {
@@ -106,7 +120,10 @@
 }
 
 .make-oder {
+  width: 150px;
   background-color: var(--green-900);
+  min-height: inherit;
+  text-align: center;
 }
 
 .make-oder:hover {
@@ -222,13 +239,32 @@
   padding: 0;
 }
 
+.offers-item:first-child {
+  background-color: var(--basic-golden-tainoi);
+}
+
+.offers-item:nth-child(2) {
+  background-color: var(--basic-spaces);
+}
+
+.offers-item:nth-child(3) {
+  background-color: var(--basic-lite-pink);
+}
+
+.offers-item:nth-child(4) {
+  background-color: var(--green-700);
+}
+
+.offers-item:nth-child(5) {
+  background-color: var(--basic-golden-tainoi);
+}
+
 .carousel-item {
   grid-column: 1 / 3;
   grid-row: 2 / 4;
 }
 
 .offers-item {
-  background-color: var(--gray-900);
   width: 300px;
   height: 123px;
 }
