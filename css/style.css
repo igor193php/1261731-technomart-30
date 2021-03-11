@@ -113,6 +113,41 @@
   color: var(--white-900);
 }
 
+.bookmarks {
+  padding: 9px 20px;
+  position: relative;
+}
+
+.bookmarks::before {
+  content: "";
+  position:absolute;
+  left: 10px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icons/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+
+
+.basket {
+  padding: 9px 20px;
+  position: relative;
+}
+
+.basket::before {
+  content: "";
+  position:absolute;
+  left: 10px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icons/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+
 .bookmarks:active,
 .basket:active {
   color: var(--white-900-rgba-05);
@@ -128,6 +163,19 @@
   background-color: var(--white-900);
   padding: 10px 29px 10px 46px;
   margin-right: 10px;
+  position: relative;
+}
+
+.sing-up::before {
+  content: "";
+  position:absolute;
+  left: 10px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icons/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
 }
 
 .check-in {
@@ -170,6 +218,19 @@
   border: solid white;
   text-align: center;
   padding-top: 12px;
+  position: relative;
+}
+
+.contacts-phone::before {
+  content: "";
+  position:absolute;
+  left: 10px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
 }
 
 .contacts p {
@@ -206,6 +267,8 @@
 .nav-site {
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-site a {
