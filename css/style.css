@@ -120,10 +120,19 @@
 }
 
 .make-oder {
-  width: 150px;
   background-color: var(--green-900);
-  min-height: inherit;
-  text-align: center;
+  padding: 9px 20px;
+}
+
+.sing-up {
+  background-color: var(--white-900);
+  padding: 10px 29px 10px 46px;
+  margin-right: 10px;
+}
+
+.check-in {
+  background-color: var(--white-900);
+  padding: 10px 30px 10px 30px;
 }
 
 .make-oder:hover {
@@ -156,6 +165,11 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  width: 270px;
+  min-height: 45px;
+  border: solid white;
+  text-align: center;
+  padding-top: 12px;
 }
 
 .contacts p {
@@ -165,7 +179,6 @@
 }
 
 .login-section {
-  width: 272px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,6 +200,7 @@
 
 .header-navigation {
   background-color: var(--black-500);
+  min-height: 60px;
 }
 
 .nav-site {
