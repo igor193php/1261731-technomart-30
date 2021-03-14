@@ -41,6 +41,19 @@
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo-main-header {
   display: flex;
   justify-content: center;
@@ -401,6 +414,11 @@
   background-color: var(--basic-golden-tainoi);
 }
 
+.carousel-info {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
 .carousel-item {
   grid-column: 1 / 3;
   grid-row: 2 / 4;
@@ -432,11 +450,36 @@
 }
 
 .carousel {
-  width: 620px;
   height: 266px;
   background-image: url("../img/main_slider_img.jpg");
   background-color: var(--gray-900);
   margin: 0px;
+  background-repeat: no-repeat;
+  padding: 0 20px 0 25px;
+}
+
+.clear-button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.buttons-carousel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.carousel-button-back {
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icons/arrow_left.svg);
+}
+
+.carousel-button-ahead {
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icons/arrow_right.svg);
 }
 
 .carousel h3 {
@@ -445,6 +488,8 @@
   line-height: 36px;
   color: var(--white-900);
   margin: 0;
+  margin-bottom: 5px;
+  padding-top: 23px;
 }
 
 .carousel p {
@@ -494,6 +539,11 @@
   color: var(--white-900);
   font-size: 17px;
   line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../img/button-goods.svg);
+  background-repeat: no-repeat;
+  padding: 10px 44px 10px 32px;
 }
 
 .goods-item img {
@@ -601,6 +651,11 @@
 
 .services-header {
   width: 394px;
+  padding-top: 64px;
+}
+
+.services-header h2 {
+  margin: 0;
 }
 
 .services-delivery {
@@ -653,6 +708,20 @@
   color: var(--black-900);
   font-size: 18px;
   line-height: 24px;
+  position: relative;
+}
+
+.partner-list-item::before {
+  content: "";
+  position:absolute;
+  left: -36px;
+  top: 10px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/line-list.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
 }
 
 /*catalog*/
@@ -947,13 +1016,6 @@
 
 .link-get-info:active {
   background-color: var(--red-900);
-}
-
-.button-goods-item {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--red-600);
-  padding: 10px 44px 10px 32px;
 }
 
 .offers-item a {
