@@ -75,6 +75,10 @@
 }
 
 .page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   background-color: var(--white-900);
   font-family: "Cuprum", sans-serif;
   font-weight: 400;
@@ -516,6 +520,12 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.catalog-goods {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+}
+
 .goods-item {
   display: flex;
   flex-wrap: wrap;
@@ -742,6 +752,20 @@
   text-transform: uppercase;
 }
 
+.filters {
+  text-transform: uppercase;
+
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
 .catalog-title {
   background-color: var(--white-800);
   margin: 0;
@@ -792,6 +816,10 @@
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
   width: 284px;
   height: 38px;
   display: flex;
