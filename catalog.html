@@ -7,10 +7,8 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,700;1,400&family=PT+Sans:ital,wght@0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Каталог Academy: Техномарт</title>
@@ -20,6 +18,14 @@
   <section class="header-top">
     <div class="header-top-content content-center">
       <a class="logo-main-header"><img src="img/icons/logo-technomart.svg" width="150" height="100" alt=""></a>
+      <form action="#" method="get" class="search">
+        <input type="search" name="find" class="search-field" placeholder="Поиск:">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                fill="white"/>
+        </svg>
+      </form>
       <div class="user-info">
         <a class="bookmarks" href="blank.html">Закладки: 0</a>
         <a class="basket" href="blank.html">Корзина: 10</a>
@@ -35,9 +41,13 @@
       <p>г.Сантк-Петербург, ул. Б.Конюшенная, д. 19/8</p>
     </address>
     <div class="user-section">
-      <div class="login-section">
+      <div class="login-section catalog-login">
         <a class="user-name" href="blank.html">Равшан Джамшутович</a>
-        <a class="link-exit" href="blank.html">Выход</a>
+        <a class="link-exit" href="blank.html"><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+          <path d="M2.10604 13.952V3.048C2.12404 2.672 2.27704 1.991 3.11604 1.991H8.14304V0H3.11604C0.938036 0 0.112036 1.81 0.0870361 3.027V13.973C0.112036 15.189 0.938036 17 3.11604 17H8.14304V15.01H3.11604C2.27704 15.01 2.12404 14.327 2.10604 13.952Z" fill="#C5C5C5"/>
+        </svg>
+        </a>
       </div>
       <div class="cabinet-section">
         <a class="link-user-orders" href="blank.html">Мои заказы</a>
@@ -62,13 +72,13 @@
   <div class="container-part-1 content-center">
     <ul class="breadcrumbs clear-list">
       <li>
-        <a href="index.html">Главная</a>
+        <a href="index.html"></a>
       </li>
       <li>
         <a href="catalog.html">Каталог</a>
       </li>
       <li>
-        <a href="#">Инструменты</a>
+        <a href="#">Инструмент</a>
       </li>
       <li>
         <a href="#">Перфораторы</a>
@@ -93,10 +103,10 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
-                </label>
+                  <input type="number" name="min-price" value="0">
+                </label> -
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="30000">
+                  <input type="number" name="max-price" value="30000">
                 </label>
               </div>
             </div>
@@ -104,24 +114,27 @@
           <fieldset class="filter-item">
             <legend>Производители:</legend>
             <ul class="filter-produser clear-list">
-              <li>
-                <input type="checkbox" name="bosch" id="filter-bosch">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch"
+                       checked>
                 <label for="filter-bosch">bosch</label>
               </li>
-              <li>
-                <input type="checkbox" name="interscol" id="filter-interscol">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol"
+                       id="filter-interscol">
                 <label for="filter-interscol">Интерскол</label>
               </li>
-              <li>
-                <input type="checkbox" name="makita" id="filter-makita">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita"
+                       checked>
                 <label for="filter-makita">makita</label>
               </li>
-              <li>
-                <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label for="filter-dewalt">dewalt</label>
               </li>
-              <li>
-                <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label for="filter-hitachi">hitachi</label>
               </li>
             </ul>
@@ -129,17 +142,19 @@
           <fieldset class="filter-item">
             <legend>Питание:</legend>
             <ul class="filter-power clear-list">
-              <li>
-                <input type="radio" name="power-group" value="battery" id="filter-battery" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="power-group" value="battery"
+                       id="filter-battery" checked>
                 <label for="filter-battery">Аккумуляторные</label>
               </li>
-              <li>
-                <input type="radio" name="power-group" value="supply" id="filter-supply">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="power-group" value="supply"
+                       id="filter-supply">
                 <label for="filter-supply">Сетевые</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
       <div>
@@ -168,12 +183,38 @@
               <a class="button-goods-item" href="blank.html">25500 Р.</a>
             </li>
             <li class="goods-item">
+              <p class="sticker-new">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                    <rect width="70" height="70" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="22.2133" y="-23" width="100" height="30" transform="rotate(45 22.2133 -23)" fill="#EE3643"/>
+                    <path
+                      d="M34.4527 19.1096L41.3823 12.1799L42.3723 13.1699L39.5014 20.0995L39.5509 20.149L44.4512 15.2488L45.3421 16.1397L38.4125 23.0694L37.4225 22.0794L40.2934 15.1498L40.2439 15.1003L35.3436 20.0005L34.4527 19.1096ZM39.7988 24.4557L46.7284 17.526L50.0943 20.8919L49.4013 21.5848L46.9264 19.1099L44.6496 21.3868L46.8274 23.5647L46.1345 24.2577L43.9566 22.0798L41.3827 24.6537L43.8576 27.1285L43.1646 27.8215L39.7988 24.4557ZM44.899 29.5558L50.6902 21.4878L51.5811 22.3787L47.1264 28.6154L47.1759 28.6649L52.3236 25.695L53.2145 26.586L50.2447 31.7337L50.2942 31.7832L56.5309 27.3285L57.4218 28.2194L49.3537 34.0106L48.2648 32.9217L51.3039 27.6452L51.2643 27.6056L45.9879 30.6448L44.899 29.5558Z"
+                      fill="white"/>
+                  </g>
+                </svg>
+              </p>
               <img src="img/bosch_6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               <a class="goods-link" href="blank.html">Перфоратор BOSCH BFG 6000</a>
               <del>32500 Р.</del>
               <a class="button-goods-item" href="blank.html">25500 Р.</a>
             </li>
             <li class="goods-item">
+              <p class="sticker-new">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                    <rect width="70" height="70" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="22.2133" y="-23" width="100" height="30" transform="rotate(45 22.2133 -23)" fill="#EE3643"/>
+                    <path
+                      d="M34.4527 19.1096L41.3823 12.1799L42.3723 13.1699L39.5014 20.0995L39.5509 20.149L44.4512 15.2488L45.3421 16.1397L38.4125 23.0694L37.4225 22.0794L40.2934 15.1498L40.2439 15.1003L35.3436 20.0005L34.4527 19.1096ZM39.7988 24.4557L46.7284 17.526L50.0943 20.8919L49.4013 21.5848L46.9264 19.1099L44.6496 21.3868L46.8274 23.5647L46.1345 24.2577L43.9566 22.0798L41.3827 24.6537L43.8576 27.1285L43.1646 27.8215L39.7988 24.4557ZM44.899 29.5558L50.6902 21.4878L51.5811 22.3787L47.1264 28.6154L47.1759 28.6649L52.3236 25.695L53.2145 26.586L50.2447 31.7337L50.2942 31.7832L56.5309 27.3285L57.4218 28.2194L49.3537 34.0106L48.2648 32.9217L51.3039 27.6452L51.2643 27.6056L45.9879 30.6448L44.899 29.5558Z"
+                      fill="white"/>
+                  </g>
+                </svg>
+              </p>
               <img src="img/bosch_3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
               <a class="goods-link" href="blank.html">Перфоратор BOSCH BFG 3000</a>
               <del>32500 Р.</del>
@@ -186,12 +227,38 @@
               <a class="button-goods-item" href="blank.html">25500 Р.</a>
             </li>
             <li class="goods-item">
+              <p class="sticker-new">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                    <rect width="70" height="70" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="22.2133" y="-23" width="100" height="30" transform="rotate(45 22.2133 -23)" fill="#EE3643"/>
+                    <path
+                      d="M34.4527 19.1096L41.3823 12.1799L42.3723 13.1699L39.5014 20.0995L39.5509 20.149L44.4512 15.2488L45.3421 16.1397L38.4125 23.0694L37.4225 22.0794L40.2934 15.1498L40.2439 15.1003L35.3436 20.0005L34.4527 19.1096ZM39.7988 24.4557L46.7284 17.526L50.0943 20.8919L49.4013 21.5848L46.9264 19.1099L44.6496 21.3868L46.8274 23.5647L46.1345 24.2577L43.9566 22.0798L41.3827 24.6537L43.8576 27.1285L43.1646 27.8215L39.7988 24.4557ZM44.899 29.5558L50.6902 21.4878L51.5811 22.3787L47.1264 28.6154L47.1759 28.6649L52.3236 25.695L53.2145 26.586L50.2447 31.7337L50.2942 31.7832L56.5309 27.3285L57.4218 28.2194L49.3537 34.0106L48.2648 32.9217L51.3039 27.6452L51.2643 27.6056L45.9879 30.6448L44.899 29.5558Z"
+                      fill="white"/>
+                  </g>
+                </svg>
+              </p>
               <img src="img/bosch_2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
               <a class="goods-link" href="blank.html">Перфоратор BOSCH BFG 2000</a>
               <del>32500 Р.</del>
               <a class="button-goods-item" href="blank.html">25500 Р.</a>
             </li>
             <li class="goods-item">
+              <p class="sticker-new">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                    <rect width="70" height="70" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="22.2133" y="-23" width="100" height="30" transform="rotate(45 22.2133 -23)" fill="#EE3643"/>
+                    <path
+                      d="M34.4527 19.1096L41.3823 12.1799L42.3723 13.1699L39.5014 20.0995L39.5509 20.149L44.4512 15.2488L45.3421 16.1397L38.4125 23.0694L37.4225 22.0794L40.2934 15.1498L40.2439 15.1003L35.3436 20.0005L34.4527 19.1096ZM39.7988 24.4557L46.7284 17.526L50.0943 20.8919L49.4013 21.5848L46.9264 19.1099L44.6496 21.3868L46.8274 23.5647L46.1345 24.2577L43.9566 22.0798L41.3827 24.6537L43.8576 27.1285L43.1646 27.8215L39.7988 24.4557ZM44.899 29.5558L50.6902 21.4878L51.5811 22.3787L47.1264 28.6154L47.1759 28.6649L52.3236 25.695L53.2145 26.586L50.2447 31.7337L50.2942 31.7832L56.5309 27.3285L57.4218 28.2194L49.3537 34.0106L48.2648 32.9217L51.3039 27.6452L51.2643 27.6056L45.9879 30.6448L44.899 29.5558Z"
+                      fill="white"/>
+                  </g>
+                </svg>
+              </p>
               <img src="img/bosch_3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
               <a class="goods-link" href="blank.html">Перфоратор BOSCH BFG 3000</a>
               <del>32500 Р.</del>
@@ -204,6 +271,19 @@
               <a class="button-goods-item" href="blank.html">25500 Р.</a>
             </li>
             <li class="goods-item">
+              <p class="sticker-new">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                    <rect width="70" height="70" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="22.2133" y="-23" width="100" height="30" transform="rotate(45 22.2133 -23)" fill="#EE3643"/>
+                    <path
+                      d="M34.4527 19.1096L41.3823 12.1799L42.3723 13.1699L39.5014 20.0995L39.5509 20.149L44.4512 15.2488L45.3421 16.1397L38.4125 23.0694L37.4225 22.0794L40.2934 15.1498L40.2439 15.1003L35.3436 20.0005L34.4527 19.1096ZM39.7988 24.4557L46.7284 17.526L50.0943 20.8919L49.4013 21.5848L46.9264 19.1099L44.6496 21.3868L46.8274 23.5647L46.1345 24.2577L43.9566 22.0798L41.3827 24.6537L43.8576 27.1285L43.1646 27.8215L39.7988 24.4557ZM44.899 29.5558L50.6902 21.4878L51.5811 22.3787L47.1264 28.6154L47.1759 28.6649L52.3236 25.695L53.2145 26.586L50.2447 31.7337L50.2942 31.7832L56.5309 27.3285L57.4218 28.2194L49.3537 34.0106L48.2648 32.9217L51.3039 27.6452L51.2643 27.6056L45.9879 30.6448L44.899 29.5558Z"
+                      fill="white"/>
+                  </g>
+                </svg>
+              </p>
               <img src="img/bosch_2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
               <a class="goods-link" href="blank.html">Перфоратор BOSCH BFG 2000</a>
               <del>32500 Р.</del>
